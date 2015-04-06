@@ -1,0 +1,22 @@
+<ion-view view-title="Stats">
+  <ion-content class="padding">
+    <div class="card" ng-if="noApiKey">
+      <div class="item item-text-wrap assertive">To see your WakaTime stats, set your API Key in Account tab</div>
+    </div>
+    <div ng-if="!noApiKey">
+        <h1>Last 7 Days</h1>
+        <div class="list card">
+          <div class="item item-divider">Projects</div>
+          <div class="item item-body">
+            <nvd3 options="chartOptions" data="chartProjectData"></nvd3>
+          </div>
+        </div>
+        <div class="list card">
+          <div class="item item-divider">Languages</div>
+          <div class="item item-body">
+            <nvd3 options="chartOptions" data="chartLanguageData"></nvd3>
+          </div>
+        </div>
+    </div>
+  </ion-content>
+</ion-view>

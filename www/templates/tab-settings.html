@@ -1,0 +1,17 @@
+<ion-view view-title="Account">
+  <ion-content>
+    <div style="margin: 1rem; auto; text-align: center;">
+      <a class="button button-small button-outline button-positive"
+         href="#" onclick="window.open('https://wakatime.com/settings', '_system'); return false;">Launch WakaTime Account Settings</a>
+    </div>
+    <form name="SettingsForm" novalidate>
+        <ion-list>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">WakaTime API Key:</span>
+            <input ng-model="settings.apiKey" type="text" autocomplete="off" autocapitalize="off" placeholder="paste here" required>
+          </label>
+        </ion-list>
+        <a class="button button-full button-positive" type="button" ng-click="saveSettings(SettingsForm, settings);">Save Settings</a>
+    </form>
+  </ion-content>
+</ion-view>

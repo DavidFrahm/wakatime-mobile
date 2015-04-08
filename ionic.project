@@ -1,6 +1,6 @@
 {
   "name": "wakatime-mobile",
-  "app_id": "",
+  "app_id": "266d3566",
   "gulpStartupTasks": [
     "sass",
     "watch"

@@ -1,7 +1,7 @@
 # wakatime-mobile
 Mobile app for WakaTime
 
-Built using the [http://ionicframework.com/](Ionic SDK), to be cross-platform on iOS and Android
+Built using the [Ionic SDK](http://ionicframework.com/), to be cross-platform on iOS and Android
 
 Right now, this has very minimal functionality:
 

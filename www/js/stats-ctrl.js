@@ -60,7 +60,7 @@ angular.module('wakatime').controller('DashCtrl', function ($scope, SettingsServ
       $scope.chartProjectData.push({key: project.name, y: project.total_seconds});
     }
 
-    for (var i = 0; i < stats.languages.length; i++) {
+    for (i = 0; i < stats.languages.length; i++) {
       var language = stats.languages[i];
       $scope.chartLanguageData.push({key: language.name, y: language.total_seconds});
     }

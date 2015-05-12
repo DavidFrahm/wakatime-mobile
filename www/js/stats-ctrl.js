@@ -54,6 +54,7 @@ angular.module('wakatime').controller('DashCtrl', function ($scope, SettingsServ
   controller.initChart = function (stats) {
     $scope.chartProjectData = [];
     $scope.chartLanguageData = [];
+    $scope.chartEditorData = [];
 
     for (var i = 0; i < stats.projects.length; i++) {
       var project = stats.projects[i];
@@ -63,6 +64,11 @@ angular.module('wakatime').controller('DashCtrl', function ($scope, SettingsServ
     for (var i = 0; i < stats.languages.length; i++) {
       var language = stats.languages[i];
       $scope.chartLanguageData.push({key: language.name, y: language.total_seconds});
+    }
+
+    for (var i = 0; i < stats.editors.length; i++) {
+      var editor = stats.editors[i];
+      $scope.chartEditorData.push({key: editor.name, y: editor.total_seconds});
     }
   };
 

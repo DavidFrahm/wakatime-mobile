@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.midmoapps.wakatime" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.midmoapps.wakatime" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>WakaTime</name>
   <description>
         WakaTime is automated analytics for programmers. Using open-source plugins for your text editor running in the background, you automatically get insights about your programming.

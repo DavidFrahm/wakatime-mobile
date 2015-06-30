@@ -16,4 +16,4 @@ If you have ideas or questions just [open an issue](https://github.com/DavidFrah
 
 ##License Info
  
-[MIT License](LICENSE)
+[BSD License](LICENSE)

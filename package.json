@@ -20,7 +20,7 @@
     "com.ionic.keyboard"
   ],
   "cordovaPlatforms": [
-    "ios",
-    "android"
+    "windows",
+    "wp8"
   ]
 }

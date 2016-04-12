@@ -58,6 +58,16 @@ angular.module('wakatime', ['ionic', 'ngCordova', 'nvd3'])
         controller: 'SettingsCtrl'
       }
     }
+  })
+
+  .state('tab.leaderboards', {
+    url: '/leaderboards',
+    views: {
+      'tab-leaderboards': {
+        templateUrl: 'templates/tab-leaderboards.html',
+        controller: 'LeaderboardsCtrl'
+      }
+    }
   });
 
   // if none of the above states are matched, use this as the fallback

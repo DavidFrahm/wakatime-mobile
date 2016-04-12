@@ -1,0 +1,29 @@
+<ion-view view-title="Leaderboards">
+  <ion-header-bar align-title="left" class="bar-positive">
+  <div class="buttons">
+    <button class="button" ng-click="doSomething()">Left Button</button>
+  </div>
+  <h1 class="title">Title!</h1>
+  <div class="buttons">
+    <button class="button">Right Button</button>
+  </div>
+  </ion-header-bar>
+  <ion-content class="padding">
+    <div class="card" ng-if="noApiKey">
+      <div class="item item-text-wrap assertive">To see your WakaTime stats, set your API Key in Account tab</div>
+    </div>
+    <div ng-if="!noApiKey">
+        <h1>Top programmers in last 7 days</h1>
+          <ion-list>
+          <ion-item  collection-repeat="stat in stats">
+            <i class="icon"><b>#{{stat.rank}}</b></i>
+             <a href="">{{stat.user.display_name}}</a>
+             <span class="item-note">
+               {{stat.running_total.human_readable_total}}
+             </span>
+          </ion-item>
+          </ion-list>
+        </div>
+    </div>
+  </ion-content>
+</ion-view>

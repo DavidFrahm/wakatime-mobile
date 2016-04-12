@@ -8,7 +8,6 @@ angular.module('wakatime').controller('LeaderboardsCtrl', function ($scope, Sett
       var apiKey = SettingsService.get().apiKey;
       $http.get('https://wakatime.com/api/v1/leaders?api_key=' + apiKey)
         .then(function (response) {
-          $log.debug("Stats:", response.data.data);
           $scope.stats = response.data.data;
           //controller.initChart($scope.stats);
         });

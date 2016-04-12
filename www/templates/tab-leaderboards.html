@@ -14,14 +14,15 @@
     </div>
     <div ng-if="!noApiKey">
         <h1>Top programmers in last 7 days</h1>
-        <div class="list list-inset">
-          <div class="item" ng-repeat="stat in stats">
+          <ion-list>
+          <ion-item  collection-repeat="stat in stats">
             <i class="icon"><b>#{{stat.rank}}</b></i>
              <a href="">{{stat.user.display_name}}</a>
              <span class="item-note">
                {{stat.running_total.human_readable_total}}
              </span>
-          </div>
+          </ion-item>
+          </ion-list>
         </div>
     </div>
   </ion-content>
